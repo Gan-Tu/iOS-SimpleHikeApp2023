@@ -10,6 +10,7 @@ import SwiftUI
 struct CardView: View {
     // MARK: - PROPERTIES
     @State private var imageNumber: Int = 1
+    @State private var isShowingSettings:Bool = false
     
     func changeImage() {
         var randomNumber: Int = imageNumber
@@ -39,9 +40,14 @@ struct CardView: View {
                         Spacer()
                         
                         Button(action: {
-                            // TODO: Show a sheet
+                            isShowingSettings.toggle()
                         }, label: {
                             CustomButtonView()
+                        })
+                        .sheet(isPresented: $isShowingSettings, content: {
+                            SettingsView()
+                                .presentationDragIndicator(.visible)
+                                .presentationDetents([.medium, .large])
                         })
                     }
                     
