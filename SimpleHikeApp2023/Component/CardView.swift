@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct CardView: View {
+    @State private var imageNumber: Int = 1
+    
+    func changeImage() {
+        var randomNumber: Int = imageNumber
+        repeat {
+            randomNumber = Int.random(in: 1...5)
+        } while randomNumber == imageNumber
+        imageNumber = randomNumber
+    }
+    
     var body: some View {
         ZStack {
             CustomBackgroundView()
 
             VStack {
-                // Header
+                // MARK: - Header
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Hiking")
@@ -42,7 +52,7 @@ struct CardView: View {
                 }
                 .padding(.horizontal, 30)
                 
-                // Main Content
+                // MARK: MAIN CONTENT
                 ZStack {
                     Circle()
                         .fill(
@@ -52,15 +62,30 @@ struct CardView: View {
                         )
                         .frame(width: 256, height: 256)
                     
-                    Image("image-1")
+                    Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.default, value: imageNumber)
                 }
                 
-                // Footer
+                // MARK: - Footer
+                Button(action: {
+                    changeImage()
+                }, label: {
+                    Text("Explore More")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(colors: [.green_light, .green_medium],
+                                           startPoint: .top,
+                                           endPoint: .bottom)
+                        )
+                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.25), radius: 0.25, x:1, y:2)
+                })
+                .buttonStyle(GradientButtonStyle())
             }
         }
-        .frame(width: 320, height: 570)
+        .frame(width: 350, height: 570)
     }
 }
 
