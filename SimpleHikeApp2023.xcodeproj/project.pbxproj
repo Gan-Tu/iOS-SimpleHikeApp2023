@@ -17,6 +17,7 @@
 		59E6D3FB2A647F5400D51B19 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6D3FA2A647F5400D51B19 /* CustomButtonView.swift */; };
 		59E6D3FD2A64821B00D51B19 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6D3FC2A64821B00D51B19 /* GradientButtonStyle.swift */; };
 		59E6D3FF2A6486D800D51B19 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6D3FE2A6486D700D51B19 /* CustomCircleView.swift */; };
+		59E6D4012A6487EC00D51B19 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6D4002A6487EC00D51B19 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		59E6D3FA2A647F5400D51B19 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		59E6D3FC2A64821B00D51B19 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		59E6D3FE2A6486D700D51B19 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
+		59E6D4002A6487EC00D51B19 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				59E6D3F82A647A4A00D51B19 /* ColorExtension.swift */,
 				59E6D3FC2A64821B00D51B19 /* GradientButtonStyle.swift */,
+				59E6D4002A6487EC00D51B19 /* MotionAnimationView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				59E6D3E52A64749600D51B19 /* SimpleHikeApp2023App.swift in Sources */,
 				59E6D3FB2A647F5400D51B19 /* CustomButtonView.swift in Sources */,
 				59E6D3FD2A64821B00D51B19 /* GradientButtonStyle.swift in Sources */,
+				59E6D4012A6487EC00D51B19 /* MotionAnimationView.swift in Sources */,
 				59E6D3F62A6477DC00D51B19 /* CustomBackgroundView.swift in Sources */,
 				59E6D3F92A647A4A00D51B19 /* ColorExtension.swift in Sources */,
 			);

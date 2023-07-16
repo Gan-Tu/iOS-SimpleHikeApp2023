@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
+    // MARK: - PROPERTIES
     @State private var imageNumber: Int = 1
     
     func changeImage() {
